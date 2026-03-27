@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "paper_run_id": "paper_run__20260320-131447__e134d585",
+  "generated_at": "2026-03-20T13:14:47",
+  "git_sha8": "e134d585",
+  "sources": {
+    "baseline_pack": {
+      "run_id": "baseline_pack__main__20260320-131433__e134d585__e3c71b41",
+      "run_dir": "artifacts/packs/baseline_pack/baseline_pack__main__20260320-131433__e134d585__e3c71b41",
+      "src_csv": "baseline_summary.csv"
+    },
+    "stress_sweep": {
+      "run_id": "stress_sweep__main__20260320-131434__e134d585__e3c71b41",
+      "run_dir": "artifacts/packs/stress_sweep/stress_sweep__main__20260320-131434__e134d585__e3c71b41",
+      "src_csv": "stress_summary.csv"
+    },
+    "n_sweep": {
+      "run_id": "n_sweep__main__20260320-131434__e134d585__e3c71b41",
+      "run_dir": "artifacts/packs/n_sweep/n_sweep__main__20260320-131434__e134d585__e3c71b41",
+      "src_csv": "n_sweep_summary.csv"
+    },
+    "coupling_pack": {
+      "run_id": "coupling_pack__main__20260320-131434__e134d585__e3c71b41",
+      "run_dir": "artifacts/packs/coupling_pack/coupling_pack__main__20260320-131434__e134d585__e3c71b41",
+      "src_csv": "coupling_summary.csv"
+    }
+  },
+  "summary_files": {
+    "baseline_pack": "summary_baseline.csv",
+    "stress_sweep": "summary_stress.csv",
+    "n_sweep": "summary_n_sweep.csv",
+    "coupling_pack": "summary_coupling.csv"
+  },
+  "table_aliases": {
+    "baseline_pack": "table_main_baseline.csv",
+    "stress_sweep": "table_stress_missing.csv",
+    "n_sweep": "table_n_scaling.csv",
+    "coupling_pack": "table_coupling.csv"
+  },
+  "summary_to_table_map": {
+    "summary_baseline.csv": "table_main_baseline.csv",
+    "summary_stress.csv": "table_stress_missing.csv",
+    "summary_n_sweep.csv": "table_n_scaling.csv",
+    "summary_coupling.csv": "table_coupling.csv"
+  },
+  "figure_counts": {
+    "baseline_pack": 12,
+    "stress_sweep": 1,
+    "n_sweep": 9,
+    "coupling_pack": 2
+  },
+  "missing_packs": [],
+  "figure_roles": {
+    "baseline_pack/baseline_cactus_S1_Ideal.png": "appendix",
+    "baseline_pack/baseline_cactus_S2_Gappy.png": "appendix",
+    "baseline_pack/baseline_cactus_S3_Hetero.png": "appendix",
+    "baseline_pack/baseline_cactus_S_PT_z0.png": "appendix",
+    "baseline_pack/baseline_rmse_vs_eval_S1_Ideal.png": "main",
+    "baseline_pack/baseline_rmse_vs_eval_S2_Gappy.png": "main",
+    "baseline_pack/baseline_rmse_vs_eval_S3_Hetero.png": "main",
+    "baseline_pack/baseline_rmse_vs_eval_S_PT_z0.png": "main",
+    "baseline_pack/baseline_rmse_vs_runtime_S1_Ideal.png": "appendix",
+    "baseline_pack/baseline_rmse_vs_runtime_S2_Gappy.png": "appendix",
+    "baseline_pack/baseline_rmse_vs_runtime_S3_Hetero.png": "appendix",
+    "baseline_pack/baseline_rmse_vs_runtime_S_PT_z0.png": "appendix",
+    "coupling_pack/coupling_vs_missing_rate.png": "appendix",
+    "coupling_pack/coupling_vs_rmse_omega.png": "appendix",
+    "n_sweep/n_vs_evals_S2_Gappy.png": "appendix",
+    "n_sweep/n_vs_evals_S3_Hetero.png": "appendix",
+    "n_sweep/n_vs_evals_S_PT_z0.png": "appendix",
+    "n_sweep/n_vs_rmse_omega_S2_Gappy.png": "main",
+    "n_sweep/n_vs_rmse_omega_S3_Hetero.png": "main",
+    "n_sweep/n_vs_rmse_omega_S_PT_z0.png": "main",
+    "n_sweep/n_vs_runtime_S2_Gappy.png": "appendix",
+    "n_sweep/n_vs_runtime_S3_Hetero.png": "appendix",
+    "n_sweep/n_vs_runtime_S_PT_z0.png": "appendix",
+    "stress_sweep/stress_missing_vs_rmse_omega.png": "main"
+  },
+  "recommended_main_figures": [
+    "baseline_pack/baseline_rmse_vs_eval_S1_Ideal.png",
+    "baseline_pack/baseline_rmse_vs_eval_S2_Gappy.png",
+    "baseline_pack/baseline_rmse_vs_eval_S3_Hetero.png",
+    "baseline_pack/baseline_rmse_vs_eval_S_PT_z0.png",
+    "n_sweep/n_vs_rmse_omega_S2_Gappy.png",
+    "n_sweep/n_vs_rmse_omega_S3_Hetero.png",
+    "n_sweep/n_vs_rmse_omega_S_PT_z0.png",
+    "stress_sweep/stress_missing_vs_rmse_omega.png"
+  ],
+  "recommended_appendix_figures": [
+    "baseline_pack/baseline_cactus_S1_Ideal.png",
+    "baseline_pack/baseline_cactus_S2_Gappy.png",
+    "baseline_pack/baseline_cactus_S3_Hetero.png",
+    "baseline_pack/baseline_cactus_S_PT_z0.png",
+    "baseline_pack/baseline_rmse_vs_runtime_S1_Ideal.png",
+    "baseline_pack/baseline_rmse_vs_runtime_S2_Gappy.png",
+    "baseline_pack/baseline_rmse_vs_runtime_S3_Hetero.png",
+    "baseline_pack/baseline_rmse_vs_runtime_S_PT_z0.png",
+    "coupling_pack/coupling_vs_missing_rate.png",
+    "coupling_pack/coupling_vs_rmse_omega.png",
+    "n_sweep/n_vs_evals_S2_Gappy.png",
+    "n_sweep/n_vs_evals_S3_Hetero.png",
+    "n_sweep/n_vs_evals_S_PT_z0.png",
+    "n_sweep/n_vs_runtime_S2_Gappy.png",
+    "n_sweep/n_vs_runtime_S3_Hetero.png",
+    "n_sweep/n_vs_runtime_S_PT_z0.png"
+  ]
+}

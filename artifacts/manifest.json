@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-20T13:14:34",
+  "latest": {
+    "baseline_pack": "baseline_pack__main__20260320-131433__e134d585__e3c71b41",
+    "coupling_pack": "coupling_pack__main__20260320-131434__e134d585__e3c71b41",
+    "init_sweep_pack": "init_sweep_pack__main__20260223-194419__a9204968__cbc4a3c3",
+    "n_sweep": "n_sweep__main__20260320-131434__e134d585__e3c71b41",
+    "omega_fix_pack": "omega_fix_pack__main__20260223-194419__a9204968__cbc4a3c3",
+    "qfrt_vs_fft_pack": "qfrt_vs_fft_pack__main__20260223-194419__a9204968__73862f93",
+    "stress_sweep": "stress_sweep__main__20260320-131434__e134d585__e3c71b41"
+  },
+  "index": {
+    "csv": "index/run_index.csv",
+    "jsonl": "index/run_index.jsonl"
+  },
+  "notes": "Public evidence manifest with repo-local references only. Runtime source roots are intentionally abstracted in index metadata."
+}

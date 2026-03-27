@@ -1,0 +1,6 @@
+{
+  "out_dir": "./figures",
+  "appA_results_csv": "TODO_PUBLIC_PLACEHOLDER://artifacts/reporting/figure_inputs/appA_results.csv",
+  "appD_omega1d_summary_csv": "TODO_PUBLIC_PLACEHOLDER://artifacts/reporting/figure_inputs/appD_omega1d_summary.csv",
+  "appE_real_capture_csv": "TODO_PUBLIC_PLACEHOLDER://artifacts/reporting/figure_inputs/appE_real_capture.csv"
+}

@@ -1,0 +1,10 @@
+paper_item,kind,role,canonical_path,upstream_source,make_target,pack,run_selector,notes
+T1_divergence_summary,table,primary,artifacts/reporting/EXPERIMENT_ANALYSIS_TABLES.md#T1,artifacts/reporting/EXPERIMENT_ANALYSIS_TABLES.md,artifact_snapshot,reporting,frozen_snapshot,submission-facing divergence summary table
+T2_consistency_summary,table,primary,artifacts/reporting/EXPERIMENT_ANALYSIS_TABLES.md#T2,artifacts/reporting/EXPERIMENT_ANALYSIS_TABLES.md,artifact_snapshot,reporting,frozen_snapshot,submission-facing consistency summary table
+T3_omega_summary,table,primary,artifacts/reporting/EXPERIMENT_ANALYSIS_TABLES.md#T3,artifacts/reporting/EXPERIMENT_ANALYSIS_TABLES.md,artifact_snapshot,reporting,frozen_snapshot,submission-facing omega summary table
+T4_method_comparison,table,primary,artifacts/reporting/EXPERIMENT_ANALYSIS_TABLES.md#T4,artifacts/reporting/EXPERIMENT_ANALYSIS_TABLES.md,artifact_snapshot,reporting,frozen_snapshot,submission-facing method comparison table
+reporting_snapshot_tables,report,primary,artifacts/reporting/EXPERIMENT_ANALYSIS_TABLES.md,artifacts/reporting/EXPERIMENT_ANALYSIS_TABLES.md,artifact_snapshot,reporting,frozen_snapshot,frozen reporting snapshot
+phase1_z_gain,table,auxiliary,artifacts/reporting/phase1_regime_boundary/latest.txt,artifacts/reporting/phase1_regime_boundary/,phase1_export,phase1_regime_boundary,latest,phase1 z-axis gain summary bundle
+phase1_mask_gain,table,auxiliary,artifacts/reporting/phase1_regime_boundary/latest.txt,artifacts/reporting/phase1_regime_boundary/,phase1_export,phase1_regime_boundary,latest,phase1 mask-axis gain summary bundle (validated)
+phase1_snr_gain,table,auxiliary,artifacts/reporting/phase1_regime_boundary/latest.txt,artifacts/reporting/phase1_regime_boundary/,phase1_export,phase1_regime_boundary,latest,phase1 snr-axis gain summary bundle
+paper_run_summary,table_set,auxiliary,artifacts/reporting/paper_runs/latest.txt,artifacts/reporting/paper_runs/,paper_summary_export,paper_runs,latest,paper-run summary tables set

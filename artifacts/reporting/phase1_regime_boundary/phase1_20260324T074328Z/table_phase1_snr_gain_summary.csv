@@ -1,0 +1,2 @@
+headline_method,reference_method,snr_min,snr_max,all_pt_sensitive_gain,all_material_rmse_gain,loss_gain_trend,strongest_gain_snr,weakest_gain_snr,note
+P0_OGTR_CF_INIT,BL_OGTR_CF,0.0,20.0,True,True,attenuating,0.0,20.0,strongest/weakest_gain_snr based on delta_loss_eval_base_vs_bl_ogtr_cf (most negative = strongest PT-base-loss improvement). Phase I current-init-policy applies. Low-k smoke runs must NOT be used for scientific robustness conclusions.

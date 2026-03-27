@@ -1,0 +1,8 @@
+created_at,pack,run_id,tag,git_sha8,cfg8,src_dir
+20260223-194419,qfrt_vs_fft_pack,qfrt_vs_fft_pack__main__20260223-194419__a9204968__73862f93,main,a9204968,73862f93,bundle_ref://qfrt_vs_fft_pack
+20260223-194419,init_sweep_pack,init_sweep_pack__main__20260223-194419__a9204968__cbc4a3c3,main,a9204968,cbc4a3c3,bundle_ref://init_sweep_pack
+20260223-194419,omega_fix_pack,omega_fix_pack__main__20260223-194419__a9204968__cbc4a3c3,main,a9204968,cbc4a3c3,bundle_ref://omega_fix_pack
+20260320-131433,baseline_pack,baseline_pack__main__20260320-131433__e134d585__e3c71b41,main,e134d585,e3c71b41,bundle_ref://baseline_pack
+20260320-131434,stress_sweep,stress_sweep__main__20260320-131434__e134d585__e3c71b41,main,e134d585,e3c71b41,bundle_ref://stress_sweep
+20260320-131434,n_sweep,n_sweep__main__20260320-131434__e134d585__e3c71b41,main,e134d585,e3c71b41,bundle_ref://n_sweep
+20260320-131434,coupling_pack,coupling_pack__main__20260320-131434__e134d585__e3c71b41,main,e134d585,e3c71b41,bundle_ref://coupling_pack

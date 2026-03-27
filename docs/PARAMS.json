@@ -1,0 +1,93 @@
+{
+  "source": {
+    "primary_reference": "docs/TODO_PUBLIC_PRIMARY_REFERENCE.pdf",
+    "secondary_reference": "docs/QFRT_IEEE4.pdf"
+  },
+  "core_dimensions": {
+    "N": 64,
+    "theta_init_offset": [0.2, 0.2, 0.0],
+    "theta_init_offset_note": "Offset added to true parameter theta* in Appendix C; order [tau, omega, z]."
+  },
+  "randomness": {
+    "seed_list": [42, 123, 456, 7, 13, 202, 314, 2718, 4096, 999]
+  },
+  "qfrt_spectral": {
+    "Qmax": "MISSING",
+    "lambda_ridge": 1e-12,
+    "lambda_ridge_note": "QFRT_IEEE4 Eq.(8) denominator uses +lambda with lambda ~ 1e-12 as a ridge term."
+  },
+  "b_lite_update": {
+    "Kmax": "MISSING",
+    "eta": "MISSING",
+    "Dmin_constant": 1e-8,
+    "Dmin_constant_note": "For the open-eval canonical instance, we fix Dmin_constant to delta from Eq.(29) (QFRT_IEEE4 Appendix B: epsilon=1e-4, delta=1e-8), instead of using the full dynamic clipping formula.",
+    "trust_region_clipping_rule": "D_stable_ii = max(D_ii, epsilon * median(D) + delta)",
+    "epsilon": 1e-4,
+    "delta": 1e-8
+  },
+  "pt_projection_and_leakage": {
+    "rho_leak_threshold": 0.1,
+    "rho_leak_threshold_note": "If rho_leak > 0.1 persistently, enter fallback mode (Algorithm 2, Section C).",
+    "leakage_ratio_definition": "Leakage Ratio (LR) = energy(PT-odd sector) / energy(PT-even sector), used as a PT-sector stability indicator in this public evidence surface."
+  },
+  "lock_and_acceptance_thresholds": {
+    "tau_lock": "MISSING",
+    "tau_L": "MISSING",
+    "tau_R": "MISSING",
+    "tau_notes": "Threshold policy can be static/adaptive/profile-based; numeric values are scenario-dependent and intentionally not fixed in this public surface."
+  },
+  "scenarios": {
+    "S1_Ideal": {
+      "description": "Ideal baseline with stationary AWGN and full sampling.",
+      "snr_dB": [2.0, 10.0],
+      "theta_true": {"tau": 0.05, "omega": -0.03, "z_real": 0.0, "z_imag": 0.0},
+      "theta_true_units": {"tau": "samples", "omega": "radians/sample", "z": "dimensionless"}
+    },
+    "S2_Gappy": {
+      "description": "Gappy data with Bernoulli missingness.",
+      "snr_dB": [2.0, 10.0],
+      "missing_rate": 0.35,
+      "theta_true": {"tau": 0.05, "omega": -0.03, "z_real": 0.0, "z_imag": 0.0},
+      "theta_true_units": {"tau": "samples", "omega": "radians/sample", "z": "dimensionless"}
+    },
+    "S3_Hetero": {
+      "description": "Heteroscedastic noise with time-varying variance over the frame.",
+      "snr_dB": [2.0, 10.0],
+      "heteroscedastic_intensity": 1.0,
+      "theta_true": {"tau": 0.05, "omega": -0.03, "z_real": 0.0, "z_imag": 0.0},
+      "theta_true_units": {"tau": "samples", "omega": "radians/sample", "z": "dimensionless"}
+    },
+    "S_PT_z0": {
+      "description": "Paper-defined S_PT (Table II): z_true=0, ghost-mode drift test.",
+      "z_is_PT_odd": true,
+      "snr_dB": [2.0, 10.0],
+      "theta_true": {"tau": 0.05, "omega": -0.03, "z_real": 0.0, "z_imag": 0.0},
+      "theta_true_units": {"tau": "samples", "omega": "radians/sample", "z": "dimensionless"},
+      "note": "Matches QFRT_IEEE4 Table II; z* = 0 in physical frame."
+    },
+    "S_PT_zNZ": {
+      "description": "Robustness extension: z_true != 0 (non-zero PT-odd contamination).",
+      "z_is_PT_odd": true,
+      "snr_dB": [2.0, 10.0],
+      "theta_true": {"tau": 0.05, "omega": -0.03, "z_real": 0.7, "z_imag": 0.3},
+      "theta_true_units": {"tau": "samples", "omega": "radians/sample", "z": "dimensionless"},
+      "note": "Additional robustness study; not in original paper."
+    },
+    "S2_BurstGappy": {
+      "description": "Structured burst-missing benchmark: one contiguous block of missing samples (same truth/noise family as S2_Gappy).",
+      "snr_dB": [2.0, 10.0],
+      "missing_rate": 0.35,
+      "theta_true": {"tau": 0.05, "omega": -0.03, "z_real": 0.0, "z_imag": 0.0},
+      "theta_true_units": {"tau": "samples", "omega": "radians/sample", "z": "dimensionless"},
+      "note": "Benchmark-family extension (structured missingness). Not a paper-derived canonical scenario."
+    },
+    "S_PT_zNZ_strong": {
+      "description": "PT-sensitive stress benchmark: stronger PT-odd contamination (~2x coupling magnitude vs S_PT_zNZ).",
+      "z_is_PT_odd": true,
+      "snr_dB": [2.0, 10.0],
+      "theta_true": {"tau": 0.05, "omega": -0.03, "z_real": 1.5, "z_imag": 0.5},
+      "theta_true_units": {"tau": "samples", "omega": "radians/sample", "z": "dimensionless"},
+      "note": "Benchmark-only stress constant (~2x stronger PT-odd coupling than S_PT_zNZ). Not paper-derived."
+    }
+  }
+}

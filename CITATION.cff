@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as the QFRT technical anchor."
+title: "QFRT Evidence Public Repository"
+type: software
+authors:
+  - family-names: "QFRT Team"
+    given-names: "Research"
+repository-code: "https://TODO-REPO-URL.example/qfrt-evidence-public"
+abstract: >-
+  Public technical anchor repository containing curated QFRT evidence artifacts,
+  traceability metadata, and review-facing documentation.
+keywords:
+  - qfrt
+  - signal-processing
+  - reproducibility
+  - evidence
+license: "NOASSERTION"
+version: "candidate-freeze-2026-03-27"
+date-released: "2026-03-27"

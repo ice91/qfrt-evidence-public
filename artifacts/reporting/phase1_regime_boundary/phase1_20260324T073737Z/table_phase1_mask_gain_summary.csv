@@ -1,0 +1,2 @@
+headline_method,reference_method,mask_sweep_validated,requested_mask_rate_min,requested_mask_rate_max,realized_mask_rate_min,realized_mask_rate_max,observed_fraction_min,observed_fraction_max,all_pt_sensitive_gain,all_material_rmse_gain,loss_gain_trend,note
+P0_OGTR_CF_INIT,BL_OGTR_CF,True,0.000,0.650,0.000,0.633,0.367,1.000,True,True,attenuating,Sweep validation: PASS. IMPORTANT: pre-fix mask results are INVALID (PT scenarios ignored mask_rate_override). Only post-fix runs are valid for scientific conclusions.

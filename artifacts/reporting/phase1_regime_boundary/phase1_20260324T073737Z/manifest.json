@@ -1,0 +1,21 @@
+{
+  "run_id": "phase1_20260324T073737Z",
+  "generated_utc": "2026-03-24T07:37:37.131946+00:00",
+  "bundle_type": "exploratory_phase1_regime_boundary",
+  "headline_method": "P0_OGTR_CF_INIT",
+  "reference_method": "BL_OGTR_CF",
+  "current_init_policy": true,
+  "mask_sweep_validity": "post-fix only \u2014 pre-fix runs are invalid (PT scenarios ignored mask_rate_override before data_generator.py fix)",
+  "onset_interval_note": "onset interval is NOT a sharp critical threshold; width depends on z_list resolution",
+  "tables": [
+    "table_phase1_z_gain_summary.csv",
+    "table_phase1_mask_gain_summary.csv",
+    "table_phase1_snr_gain_summary.csv",
+    "table_phase1_regime_summary.csv"
+  ],
+  "input_sources": {
+    "z_sweep": "phase1_regime_boundary_out/z_sweep/artifacts/z_sweep_summary.csv",
+    "pt_mask_sweep": "phase1_regime_boundary_out/pt_mask_sweep/artifacts/pt_mask_sweep_summary.csv",
+    "pt_snr_sweep": "phase1_regime_boundary_out/pt_snr_sweep/artifacts/pt_snr_sweep_summary.csv"
+  }
+}

@@ -1,0 +1,7 @@
+{"created_at":"20260223-194419","pack":"qfrt_vs_fft_pack","run_id":"qfrt_vs_fft_pack__main__20260223-194419__a9204968__73862f93","tag":"main","git_sha8":"a9204968","cfg8":"73862f93","src_dir":"bundle_ref://qfrt_vs_fft_pack"}
+{"created_at":"20260223-194419","pack":"init_sweep_pack","run_id":"init_sweep_pack__main__20260223-194419__a9204968__cbc4a3c3","tag":"main","git_sha8":"a9204968","cfg8":"cbc4a3c3","src_dir":"bundle_ref://init_sweep_pack"}
+{"created_at":"20260223-194419","pack":"omega_fix_pack","run_id":"omega_fix_pack__main__20260223-194419__a9204968__cbc4a3c3","tag":"main","git_sha8":"a9204968","cfg8":"cbc4a3c3","src_dir":"bundle_ref://omega_fix_pack"}
+{"created_at":"20260320-131433","pack":"baseline_pack","run_id":"baseline_pack__main__20260320-131433__e134d585__e3c71b41","tag":"main","git_sha8":"e134d585","cfg8":"e3c71b41","src_dir":"bundle_ref://baseline_pack"}
+{"created_at":"20260320-131434","pack":"stress_sweep","run_id":"stress_sweep__main__20260320-131434__e134d585__e3c71b41","tag":"main","git_sha8":"e134d585","cfg8":"e3c71b41","src_dir":"bundle_ref://stress_sweep"}
+{"created_at":"20260320-131434","pack":"n_sweep","run_id":"n_sweep__main__20260320-131434__e134d585__e3c71b41","tag":"main","git_sha8":"e134d585","cfg8":"e3c71b41","src_dir":"bundle_ref://n_sweep"}
+{"created_at":"20260320-131434","pack":"coupling_pack","run_id":"coupling_pack__main__20260320-131434__e134d585__e3c71b41","tag":"main","git_sha8":"e134d585","cfg8":"e3c71b41","src_dir":"bundle_ref://coupling_pack"}

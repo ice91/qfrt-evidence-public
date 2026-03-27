@@ -1,0 +1,2 @@
+headline_method,reference_method,snr_min,snr_max,all_pt_sensitive_gain,all_material_rmse_gain,loss_gain_trend,strongest_gain_snr,weakest_gain_snr,note
+P0_OGTR_CF_INIT,BL_OGTR_CF,NONE,NONE,False,False,NONE,NONE,NONE,No rows found for headline_method in snr sweep summary.
