@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: "QFRT Team"
     given-names: "Research"
-repository-code: "https://TODO-REPO-URL.example/qfrt-evidence-public"
+repository-code: "https://github.com/ice91/qfrt-evidence-public/qfrt-evidence-public"
 abstract: >-
   Public technical anchor repository containing curated QFRT evidence artifacts,
   traceability metadata, and review-facing documentation.
