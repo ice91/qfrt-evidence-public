@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: "QFRT Team"
     given-names: "Research"
-repository-code: "https://github.com/ice91/qfrt-evidence-public/qfrt-evidence-public"
+repository-code: "https://github.com/ice91/qfrt-evidence-public"
 abstract: >-
   Public technical anchor repository containing curated QFRT evidence artifacts,
   traceability metadata, and review-facing documentation.
@@ -14,6 +14,6 @@ keywords:
   - signal-processing
   - reproducibility
   - evidence
-license: "NOASSERTION"
+license: "BSD-3-Clause"
 version: "candidate-freeze-2026-03-27"
 date-released: "2026-03-27"

@@ -1,14 +1,14 @@
 # QFRT Evidence Repository (Artifact-First)
 
-This repository is a curated **technical anchor** for evidence review.
+This repository is a curated **public technical anchor** for QFRT evidence review.
 It is intentionally focused on:
 
 - frozen reporting tables,
-- reproducibility-oriented metadata,
+- reproducibility-oriented traceability metadata,
 - export utilities for assembling submission-facing bundles,
 - documentation for interpreting curated artifacts.
 
-It is **not** the execution environment for full benchmark generation.
+It is **not** a full benchmark execution environment.
 
 ---
 
@@ -22,9 +22,9 @@ Included:
 - `artifacts/manifest.json` pointer metadata
 - `scripts/export_*.py` export helpers
 
-Not included in this repo’s runtime contract:
+Not included in this repository:
 
-- full training/benchmark execution stack
+- full benchmark execution stack
 - large generated run directories
 - environment-specific absolute paths
 
@@ -46,13 +46,12 @@ Use this repo as a **read + export** surface:
 2. verify provenance via `artifacts/index/` and `artifacts/manifest.json`
 3. use export scripts to produce compact reviewer-facing bundles
 
-For heavy execution workflows, use the separate execution environment.
+For full benchmark generation, use the corresponding execution workspace.
 
 ---
 
 ## Release policy notes
 
 - Paths in this repo should remain repo-local and portable.
-- Any unresolved runtime dependency is marked explicitly as TODO/placeholder.
-- This repo does not choose or imply a final public license by itself.
-
+- Any unresolved artifact reference is marked explicitly as TODO/placeholder.
+- This repository is released under the BSD 3-Clause License.

@@ -3,7 +3,7 @@
 ## Public repository role
 
 This repository is publicly structured as a QFRT technical anchor, providing
-curated artifacts, reporting summaries, configuration snapshots, and supporting
+curated artifacts, reporting summaries, traceability metadata, and supporting
 documentation for external technical review.
 
 ## What is available here
@@ -17,11 +17,10 @@ documentation for external technical review.
 ## What is not included here
 
 - full benchmark execution pipeline
-- full raw runtime output trees
-- non-public implementation systems and restricted operational materials
+- full raw output trees
+- operational materials not included in this public evidence surface
 
 ## Usage expectation
 
 Consumers should use repo-local artifact paths and traceability metadata as the
 primary reference surface for citation, review, and cross-checking.
-

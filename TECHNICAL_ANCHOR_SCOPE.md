@@ -6,12 +6,12 @@ portable evidence surface.
 
 ## 1) What this repository provides
 
-This public repository provides a curated, review-facing technical package:
+This public repository provides a curated, review-facing evidence package:
 
 - **Curated artifacts**
   - Frozen, human-readable evidence outputs organized for inspection and audit.
-- **Configs**
-  - Public configuration snapshots needed to interpret exposed artifacts.
+- **Supporting metadata**
+  - Public metadata needed to interpret exposed artifacts.
 - **Summary tables**
   - Consolidated tables designed for reproducible reading and comparison.
 - **Figure crosswalk**
@@ -26,14 +26,12 @@ workflows on repo-local paths.
 
 This public repository does not include:
 
-- **Private core implementation**
-  - Non-public core modules and protected implementation details.
-- **Benchmark execution engine**
-  - Full experiment orchestration stack and runtime-only pipelines.
+- **Execution materials**
+  - Additional implementation materials and full benchmark-generation workflows.
 - **Full run outputs**
   - Large raw run directories, intermediate scratch outputs, and machine-specific products.
-- **Commercial/internal materials**
-  - Non-public business materials, internal-only notes, and restricted operational content.
+- **Additional operational materials**
+  - Supplemental operational notes and restricted release materials.
 
 As a result, this repository should not be treated as a full execution workspace.
 
@@ -54,22 +52,20 @@ Suggested wording:
 > "Evidence is anchored in the QFRT public technical anchor repository, using
 > curated artifacts and traceability metadata under repo-local canonical paths."
 
-## 4) Data retained in private repositories
+## 4) Materials not included in this repository
 
-The following categories remain in private repositories and controlled execution
-surfaces:
+The following categories are outside the scope of this repository:
 
-- Full benchmark orchestration code and execution automation.
-- End-to-end run generation pipelines and high-volume raw outputs.
-- Environment-specific integration details and deployment/runtime wiring.
-- Restricted datasets, protected supplements, and non-public operational records.
+- Full benchmark generation and execution automation.
+- High-volume raw outputs and intermediate scratch products.
+- Environment-specific integration details and deployment wiring.
+- Restricted datasets, protected supplements, and operational records.
 
 Public evidence in this repository is designed to remain interpretable without
-requiring direct access to those private systems.
+requiring access to those additional materials.
 
 ## 5) Public-release posture
 
 This scope is written for external release and long-term portability.
 All public references should remain path-portable, reviewer-friendly, and
 independent of machine-specific runtime assumptions.
-
