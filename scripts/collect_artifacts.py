@@ -341,12 +341,15 @@ def ensure_root_readme(artifacts_root: Path) -> None:
         return
     p.write_text(
         "# Evidence Artifacts (Repo-level)\n\n"
-        "This directory is a canonical, submission-friendly Evidence Pack entry point.\n\n"
+        "This directory is a canonical, submission-friendly public evidence entry point.\n\n"
         "## Structure\n"
-        "- `packs/`: per-pack, versioned runs (`RUN_ID/`), each with `manifest.json` + `checksums.sha256`\n"
-        "- `index/`: global run index (`run_index.csv`, `run_index.jsonl`)\n"
+        "- `reporting/`: curated paper-facing exported tables, figures, and latest snapshot pointers\n"
+        "- `index/`: compact pack provenance index (`run_index.csv`, `run_index.jsonl`)\n"
         "- `configs/`, `env/`: reproducibility snapshots\n"
-        "- `reporting/`: paper-facing exported tables (e.g., EXPERIMENT_ANALYSIS_TABLES.md)\n\n"
+        "- `manifest.json`: latest pack run IDs and index locations\n\n"
+        "Raw `packs/` run roots are not included in this public repository. Pack origins\n"
+        "are represented by `bundle_ref://...` provenance labels in `index/run_index.*`\n"
+        "and by run IDs in `manifest.json`.\n\n"
         "## RUN_ID Format\n"
         "`<pack>__<tag>__<YYYYMMDD-HHMMSS>__<gitsha8>__<cfg8>`\n\n",
         encoding="utf-8",

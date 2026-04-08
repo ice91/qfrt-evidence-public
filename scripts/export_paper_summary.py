@@ -213,10 +213,9 @@ def _write_readme(out_dir: Path, manifest: dict) -> None:
         "",
         "## Traceability",
         "",
-        "- Source pack runs are frozen under `artifacts/packs/<pack>/<RUN_ID>/`.",
-        "- This directory is a read-only assembled view; do not edit it manually.",
-        "- To reassemble from the same pack runs: `make paper_summary`",
-        "- To re-run experiments: `make paper_experiments`",
+        "- This directory is the read-only public assembled paper-run reporting snapshot.",
+        "- Source pack run IDs are listed above and in `manifest.json`; raw pack roots are provenance-only origins and are not included as local `artifacts/packs/<pack>/<RUN_ID>/` directories in this public repository.",
+        "- Reassembly and experiment regeneration belong to the execution workspace, not this public technical anchor.",
         "",
     ]
     (out_dir / "README.md").write_text("\n".join(lines), encoding="utf-8")

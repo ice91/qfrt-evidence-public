@@ -4,7 +4,7 @@
 
 - 凍結的報表與摘要，
 - 可追溯的輕量中繼資料，
-- 導出 submission-facing bundle 的工具，
+- 導出面向提交與審查 bundle 的工具，
 - 對證據內容的文件化說明。
 
 本倉庫**不是**完整實驗執行環境。
@@ -33,17 +33,17 @@
 
 - `docs/`：證據導向文件
 - `artifacts/`：凍結報告與可追溯中繼資料
-- `scripts/`：submission-facing 導出工具
+- `scripts/`：面向提交與審查的導出工具
 
 ---
 
 ## 使用方式
 
-請把本倉庫當作 **read + export** 介面：
+請把本倉庫當作 **讀取 + 導出** 介面：
 
-1. 從 `artifacts/reporting/` 讀取整理後 summary/table
+1. 從 `artifacts/reporting/` 讀取整理後的摘要與表格
 2. 用 `artifacts/index/` 與 `artifacts/manifest.json` 做來源核對
-3. 使用 export scripts 產出 reviewer-friendly bundle
+3. 使用導出工具產出便於審查的 bundle
 
 需要大量重跑或完整執行流程時，請使用對應的私有執行環境。
 
@@ -53,5 +53,4 @@
 
 - 路徑需保持 repo-local 與可攜。
 - 若仍有未解決依賴，必須以 TODO/placeholder 明示。
-- 本倉庫本身不代表最終公開授權選擇。
-
+- 本倉庫以 BSD 3-Clause License 發布。

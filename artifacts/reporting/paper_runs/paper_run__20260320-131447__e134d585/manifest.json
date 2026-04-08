@@ -3,6 +3,7 @@
   "paper_run_id": "paper_run__20260320-131447__e134d585",
   "generated_at": "2026-03-20T13:14:47",
   "git_sha8": "e134d585",
+  "source_path_policy": "sources.*.run_dir values are provenance-only source labels from the execution workspace; raw artifacts/packs roots are not included as active local paths in this public technical anchor.",
   "sources": {
     "baseline_pack": {
       "run_id": "baseline_pack__main__20260320-131433__e134d585__e3c71b41",
