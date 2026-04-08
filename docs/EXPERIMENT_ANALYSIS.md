@@ -26,11 +26,13 @@ This document explains how to read curated summaries in this repository.
 
 ## Source of truth in this repo
 
-- `artifacts/reporting/` for curated reporting tables
-- `artifacts/index/` for compact provenance metadata
-- `artifacts/manifest.json` for latest pointers
+- `artifacts/reporting/summary_table.csv` for the top-level frozen summary table
+- `artifacts/reporting/EXPERIMENT_ANALYSIS_TABLES.md` for the curated paper-facing table snapshot
+- `artifacts/reporting/paper_runs/latest.txt` for the latest assembled paper-run reporting snapshot
+- `artifacts/reporting/phase1_regime_boundary/latest.txt` for the latest exploratory Phase I boundary snapshot
+- `artifacts/index/` for compact provenance metadata using `bundle_ref://...` labels
+- `artifacts/manifest.json` for latest pack run IDs
 
 ## Public-surface constraint
 
 This document intentionally avoids requiring full execution-stack details.
-

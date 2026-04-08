@@ -21,3 +21,10 @@ The first public release represents the initial curated external release of the
 QFRT evidence surface. It establishes the baseline public package for citation,
 review, and traceability, with release-facing documentation and metadata aligned
 to long-term public use.
+
+For this release, the active public entry points are repo-local reporting paths
+under `artifacts/reporting/`, including `summary_table.csv`,
+`EXPERIMENT_ANALYSIS_TABLES.md`, `paper_runs/latest.txt`, and
+`phase1_regime_boundary/latest.txt`. Run IDs in `artifacts/manifest.json` and
+`artifacts/index/run_index.*` are provenance metadata; `bundle_ref://...`
+values are not expected to resolve as local files in this repository.

@@ -1,13 +1,16 @@
 # Evidence Artifacts (Repo-level)
 
-This directory is a canonical, submission-friendly Evidence Pack entry point.
+This directory is a canonical, submission-friendly public evidence entry point.
 
 ## Structure
-- `packs/`: per-pack, versioned runs (`RUN_ID/`), each with `manifest.json` + `checksums.sha256`
-- `index/`: global run index (`run_index.csv`, `run_index.jsonl`)
+- `reporting/`: curated paper-facing exported tables, figures, and latest snapshot pointers
+- `index/`: compact pack provenance index (`run_index.csv`, `run_index.jsonl`)
 - `configs/`, `env/`: reproducibility snapshots
-- `reporting/`: paper-facing exported tables (e.g., EXPERIMENT_ANALYSIS_TABLES.md)
+- `manifest.json`: latest pack run IDs and index locations
+
+Raw `packs/` run roots are not included in this public repository. Pack origins
+are represented by `bundle_ref://...` provenance labels in `index/run_index.*`
+and by run IDs in `manifest.json`.
 
 ## RUN_ID Format
 `<pack>__<tag>__<YYYYMMDD-HHMMSS>__<gitsha8>__<cfg8>`
-

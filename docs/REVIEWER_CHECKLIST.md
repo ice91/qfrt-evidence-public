@@ -25,7 +25,9 @@ This checklist is for reviewing the curated evidence surface in this repository.
 ## D. Provenance checks
 
 - [ ] `artifacts/index/` is readable and consistent
-- [ ] `artifacts/manifest.json` points to repo-local references
+- [ ] `artifacts/manifest.json` records latest pack run IDs without implying local raw pack roots
+- [ ] `bundle_ref://...` entries in `artifacts/index/` are treated as provenance labels, not local paths
+- [ ] reporting `latest.txt` pointers resolve to repo-local reporting snapshot directories
 - [ ] reporting tables referenced in docs exist in `artifacts/reporting/`
 
 ## E. Release-hygiene checks
@@ -33,4 +35,3 @@ This checklist is for reviewing the curated evidence surface in this repository.
 - [ ] Sensitive wording is neutralized in public-facing docs
 - [ ] Unsupported execution dependencies are removed from docs
 - [ ] Curated evidence remains interpretable without non-local runtime context
-

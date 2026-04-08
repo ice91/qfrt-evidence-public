@@ -60,6 +60,13 @@ increasing with `requested_mask_rate`.
 | `table_phase1_snr_gain_summary.csv`  | SNR-axis robustness (strongest/weakest gain SNR) |
 | `table_phase1_regime_summary.csv`    | Consolidated regime labels (4 rows) |
 
+## Provenance note
+
+`manifest.json` records the source labels used when this exploratory bundle was
+assembled. Entries such as `phase1_regime_boundary_out/...` are provenance-only
+source labels and are not required to resolve as local paths in this public
+technical anchor.
+
 ---
 
 ## Regime Labels

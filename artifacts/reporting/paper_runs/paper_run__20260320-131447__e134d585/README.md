@@ -21,7 +21,11 @@ Appendix/supplementary: see `manifest.json` → `recommended_appendix_figures`.
 
 ## Traceability
 
-- Source pack runs are frozen under `artifacts/packs/<pack>/<RUN_ID>/`.
-- This directory is a read-only assembled view; do not edit it manually.
-- To reassemble from the same pack runs: `make paper_summary`
-- To re-run experiments: `make paper_experiments`
+- This directory is the read-only public assembled paper-run reporting snapshot.
+- Source pack run IDs are listed above and in `manifest.json`; their raw pack
+  roots are provenance-only origins and are not included as local
+  `artifacts/packs/<pack>/<RUN_ID>/` directories in this public repository.
+- For pack-level provenance, use `../../../index/run_index.csv` and
+  `../../../manifest.json`.
+- Reassembly and experiment regeneration belong to the execution workspace, not
+  this public technical anchor.

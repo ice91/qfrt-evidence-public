@@ -6,6 +6,10 @@ using only curated, portable references.
 ## Mapping policy
 
 - Prefer curated reporting tables in `artifacts/reporting/`.
+- Use `artifacts/reporting/paper_runs/latest.txt` for the latest public
+  assembled paper-run figure/table snapshot.
+- Use `artifacts/reporting/phase1_regime_boundary/latest.txt` only for the
+  exploratory Phase I boundary bundle.
 - If figure assets are unavailable in this public surface, keep table-backed
   evidence and mark figure slot as TODO.
 - Avoid assumptions about local runtime-generated directories.
@@ -24,4 +28,3 @@ using only curated, portable references.
 - Keep robustness wording conservative and range-bounded.
 - If a figure depends on unavailable runtime output, cite the corresponding
   curated table and mark figure generation as deferred.
-

@@ -24,3 +24,10 @@ This candidate freeze packages the public evidence surface for QFRT technical re
 - This repository is a public technical anchor and curated evidence surface.
 - It is not a full benchmark execution environment.
 - Placeholder entries are intentional and governed by `PLACEHOLDER_POLICY.md`.
+- Active public evidence should be read from repo-local paths under
+  `artifacts/reporting/`; latest reporting pointers live at
+  `artifacts/reporting/paper_runs/latest.txt` and
+  `artifacts/reporting/phase1_regime_boundary/latest.txt`.
+- `artifacts/manifest.json` and `artifacts/index/run_index.*` provide pack-level
+  provenance metadata. `bundle_ref://...` entries identify provenance bundles
+  and are not local runtime paths.

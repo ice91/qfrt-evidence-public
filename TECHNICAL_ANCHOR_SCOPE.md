@@ -22,6 +22,17 @@ This public repository provides a curated, review-facing evidence package:
 Operationally, this repository is optimized for **read + verify + export**
 workflows on repo-local paths.
 
+The primary public reporting entry points are:
+
+- `artifacts/reporting/summary_table.csv`
+- `artifacts/reporting/EXPERIMENT_ANALYSIS_TABLES.md`
+- `artifacts/reporting/paper_runs/latest.txt`
+- `artifacts/reporting/phase1_regime_boundary/latest.txt`
+
+`artifacts/manifest.json` and `artifacts/index/run_index.*` provide compact
+provenance metadata for pack-level run IDs. `bundle_ref://...` values in the
+run index are provenance labels, not local runtime paths.
+
 ## 2) What this repository does not provide
 
 This public repository does not include:
@@ -44,7 +55,8 @@ Recommended citation practice:
 
 1. Identify the evidence item (table, figure mapping, or reporting snapshot).
 2. Cite the canonical repo-local path (for example under `artifacts/reporting/`).
-3. Include the corresponding traceability/index references when provenance is needed.
+3. Include `artifacts/manifest.json`, `artifacts/index/run_index.*`, or a
+   reporting `latest.txt` pointer when provenance is needed.
 4. Use immutable revision identifiers (commit/tag/release) in formal references.
 
 Suggested wording:

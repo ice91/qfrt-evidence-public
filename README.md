@@ -10,6 +10,14 @@ It is intentionally focused on:
 
 It is **not** a full benchmark execution environment.
 
+Canonical public entry points:
+
+- `artifacts/reporting/summary_table.csv` is the top-level frozen summary table.
+- `artifacts/reporting/EXPERIMENT_ANALYSIS_TABLES.md` is the curated paper-facing table snapshot.
+- `artifacts/reporting/paper_runs/latest.txt` points to the latest assembled paper-run reporting snapshot.
+- `artifacts/reporting/phase1_regime_boundary/latest.txt` points to the latest exploratory Phase I boundary snapshot.
+- `artifacts/manifest.json` records latest pack run IDs; `artifacts/index/run_index.*` records compact pack provenance.
+
 ---
 
 ## Scope
@@ -46,7 +54,9 @@ Use this repo as a **read + export** surface:
 2. verify provenance via `artifacts/index/` and `artifacts/manifest.json`
 3. use export scripts to produce compact reviewer-facing bundles
 
-For full benchmark generation, use the corresponding execution workspace.
+`bundle_ref://...` entries in the run index are provenance-only bundle labels,
+not local paths. Full benchmark generation and omitted raw pack roots belong to
+the corresponding execution workspace, not this public technical anchor.
 
 ---
 
