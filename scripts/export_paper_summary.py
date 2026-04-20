@@ -348,7 +348,7 @@ def main() -> int:
             f"\n[warn] {len(manifest['missing_packs'])} pack(s) had no collected run: "
             f"{manifest['missing_packs']}"
         )
-        print("       Run 'make paper_experiments && make collect_tsp_packs' first.")
+        print("       Reassemble required source packs in the execution workspace first.")
         return 1
 
     rel_out_done = out_root.relative_to(REPO_ROOT) if out_root.is_relative_to(REPO_ROOT) else out_root

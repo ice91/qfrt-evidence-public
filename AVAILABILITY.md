@@ -24,3 +24,7 @@ documentation for external technical review.
 
 Consumers should use repo-local artifact paths and traceability metadata as the
 primary reference surface for citation, review, and cross-checking.
+
+For formal citation, use a tagged release or pinned commit. `latest.txt` files
+are convenience pointers within a checked-out revision; they are not themselves
+immutable citation targets.

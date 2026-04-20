@@ -31,3 +31,13 @@ This candidate freeze packages the public evidence surface for QFRT technical re
 - `artifacts/manifest.json` and `artifacts/index/run_index.*` provide pack-level
   provenance metadata. `bundle_ref://...` entries identify provenance bundles
   and are not local runtime paths.
+
+### Citation and release procedure
+
+- Formal citations should use a tagged release or pinned commit, plus the
+  repo-local artifact path being cited.
+- `latest.txt` files are moving convenience pointers within the repository
+  state being cited; cite the enclosing tag or commit for immutability.
+- Before creating a public release tag, maintainers should verify checksum
+  manifests, review release-facing docs, then create the tag from the reviewed
+  commit.

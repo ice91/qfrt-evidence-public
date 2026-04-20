@@ -57,7 +57,12 @@ Recommended citation practice:
 2. Cite the canonical repo-local path (for example under `artifacts/reporting/`).
 3. Include `artifacts/manifest.json`, `artifacts/index/run_index.*`, or a
    reporting `latest.txt` pointer when provenance is needed.
-4. Use immutable revision identifiers (commit/tag/release) in formal references.
+4. Use immutable revision identifiers in formal references: preferably a tagged
+   release, or otherwise a pinned commit.
+
+`latest.txt` files are stable paths to convenience pointers within a given
+revision. They help identify the current curated snapshot for that revision, but
+they should be cited together with the enclosing tag or commit.
 
 Suggested wording:
 

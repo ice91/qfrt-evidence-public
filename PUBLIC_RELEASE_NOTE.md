@@ -15,7 +15,8 @@ complete generation workspace.
 When citing QFRT evidence, cite this repository as the **QFRT public technical
 anchor** and reference the canonical repo-local path for the relevant artifact,
 table, figure mapping, or reporting snapshot. For formal references, include an
-immutable revision identifier such as a release tag or commit.
+immutable revision identifier, preferably a tagged release or otherwise a pinned
+commit.
 
 The first public release represents the initial curated external release of the
 QFRT evidence surface. It establishes the baseline public package for citation,
@@ -28,3 +29,5 @@ under `artifacts/reporting/`, including `summary_table.csv`,
 `phase1_regime_boundary/latest.txt`. Run IDs in `artifacts/manifest.json` and
 `artifacts/index/run_index.*` are provenance metadata; `bundle_ref://...`
 values are not expected to resolve as local files in this repository.
+The `latest.txt` files are navigation pointers within the cited repository
+revision, not standalone immutable citation targets.

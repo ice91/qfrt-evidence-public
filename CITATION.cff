@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite it as the QFRT technical anchor."
+message: "If you use this repository, please cite the QFRT technical anchor using a tagged release or pinned commit."
 title: "QFRT Evidence Public Repository"
 type: software
 authors:
