@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "addendum_id": "paper_runs_addendum__20260420-102254__a12bd8ff",
+  "generated_at": "2026-04-20T10:22:58+0800",
+  "git_sha8": "a12bd8ff",
+  "bundle_type": "paper_runs_curated_addendum",
+  "addendum_scope": "indexed_execution_side_pack_references",
+  "review_surface": "citation_safe_review_addendum",
+  "parent_reporting_surface": {
+    "latest_pointer": "artifacts/reporting/paper_runs/latest.txt",
+    "resolved_snapshot": "artifacts/reporting/paper_runs/paper_run__20260320-131447__e134d585"
+  },
+  "source_path_policy": "Entries in this addendum are review-facing provenance metadata only. Execution-source labels such as bundle_ref://... are not local runtime paths, and qfrt-evidence-public is not the execution owner.",
+  "provenance_sources": {
+    "root_manifest": "artifacts/manifest.json",
+    "run_index_csv": "artifacts/index/run_index.csv",
+    "run_index_jsonl": "artifacts/index/run_index.jsonl"
+  },
+  "packs": {
+    "init_sweep_pack": {
+      "status": "indexed_public_reference_only",
+      "run_id": "init_sweep_pack__main__20260223-194419__a9204968__cbc4a3c3",
+      "created_at": "20260223-194419",
+      "tag": "main",
+      "source_git_sha8": "a9204968",
+      "cfg8": "cbc4a3c3",
+      "bundle_ref": "bundle_ref://init_sweep_pack",
+      "index_rows": {
+        "csv": "artifacts/index/run_index.csv",
+        "jsonl": "artifacts/index/run_index.jsonl"
+      },
+      "reporting_exposure": "manifest_index_only",
+      "paper_run_integration_status": "not_curated_into_core_paper_tables",
+      "notes": "Execution-side evidence reference exposed for review navigation only; no curated summary table, result figure, or copied execution artifact is added here."
+    },
+    "omega_fix_pack": {
+      "status": "indexed_public_reference_only",
+      "run_id": "omega_fix_pack__main__20260223-194419__a9204968__cbc4a3c3",
+      "created_at": "20260223-194419",
+      "tag": "main",
+      "source_git_sha8": "a9204968",
+      "cfg8": "cbc4a3c3",
+      "bundle_ref": "bundle_ref://omega_fix_pack",
+      "index_rows": {
+        "csv": "artifacts/index/run_index.csv",
+        "jsonl": "artifacts/index/run_index.jsonl"
+      },
+      "reporting_exposure": "manifest_index_only",
+      "paper_run_integration_status": "not_curated_into_core_paper_tables",
+      "notes": "Execution-side evidence reference exposed for review navigation only; no curated summary table, result figure, or copied execution artifact is added here."
+    }
+  },
+  "non_claims": [
+    "This addendum does not claim that init_sweep_pack is curated into the core paper_runs result tables.",
+    "This addendum does not claim that omega_fix_pack is curated into the core paper_runs result tables.",
+    "This addendum does not claim manuscript-grade sufficiency for either pack.",
+    "This addendum does not claim that raw execution outputs are present in this public repository.",
+    "This addendum does not claim that bundle_ref://... values resolve to local runtime directories.",
+    "This addendum does not claim that qfrt-evidence-public can regenerate, validate, or own the underlying execution workflows.",
+    "This addendum does not introduce new result summaries, figures, or scientific conclusions beyond already-public manifest/index metadata.",
+    "This addendum does not reopen bridge work, execution-side restructuring, or core paper_runs bundle redesign."
+  ]
+}
