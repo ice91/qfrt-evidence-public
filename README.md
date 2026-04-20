@@ -16,6 +16,7 @@ Canonical public entry points:
 - `artifacts/reporting/EXPERIMENT_ANALYSIS_TABLES.md` is the curated paper-facing table snapshot.
 - `artifacts/reporting/paper_runs/latest.txt` points to the latest assembled paper-run reporting snapshot.
 - `artifacts/reporting/phase1_regime_boundary/latest.txt` points to the latest exploratory Phase I boundary snapshot.
+- `artifacts/reporting/paper_runs_addendum/latest.txt` points to the latest review-facing addendum for indexed execution-side pack references.
 - `artifacts/manifest.json` records latest pack run IDs; `artifacts/index/run_index.*` records compact pack provenance.
 
 ---

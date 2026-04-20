@@ -10,6 +10,7 @@ It is intended as a compact review entry point.
 - `paper_artifact_map.csv`
 - `paper_runs/latest.txt`
 - `phase1_regime_boundary/latest.txt`
+- `paper_runs_addendum/latest.txt`
 
 ## Provenance in this public surface
 
@@ -17,6 +18,7 @@ It is intended as a compact review entry point.
 - `../manifest.json` for latest pointers
 - `paper_runs/latest.txt` for the latest assembled paper-run reporting snapshot
 - `phase1_regime_boundary/latest.txt` for the latest exploratory Phase I boundary snapshot
+- `paper_runs_addendum/latest.txt` for the latest review-facing addendum exposing indexed execution-side pack references
 
 ## Path policy
 

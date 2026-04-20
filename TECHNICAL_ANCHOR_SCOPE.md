@@ -28,6 +28,7 @@ The primary public reporting entry points are:
 - `artifacts/reporting/EXPERIMENT_ANALYSIS_TABLES.md`
 - `artifacts/reporting/paper_runs/latest.txt`
 - `artifacts/reporting/phase1_regime_boundary/latest.txt`
+- `artifacts/reporting/paper_runs_addendum/latest.txt`
 
 `artifacts/manifest.json` and `artifacts/index/run_index.*` provide compact
 provenance metadata for pack-level run IDs. `bundle_ref://...` values in the
